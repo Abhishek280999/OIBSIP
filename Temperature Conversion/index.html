@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Temperature Converter</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+	<div class="maindiv">
+		<form oninput="result.value=onInput(degree.value, fromScale.value, toScale.value)">
+
+			<h1 class="heading">Temperature Converter</h1>
+
+			<input type="text" id="degree" placeholder="Enter Temperature" onkeypress="onlyNumbers(event)">
+
+			<select id="fromScale">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+			</select>
+
+			<h2>To</h2>
+
+			<select id="toScale">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+			</select>
+
+			<h4>&#8681;</h4>
+			<input type="text" class="output" name="result" placeholder="Result" for="degree fromScale toScale">
+
+		</form>
+
+	</div>
+
+</body>
+
+</html>
+<!-- Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
