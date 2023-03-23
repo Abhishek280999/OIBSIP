@@ -1,0 +1,74 @@
+html,body{
+   height: 100%;
+   width: 100%;
+   background-image: linear-gradient(
+    to bottom right,
+    rgba(79, 51, 176, 1),
+    rgba(210, 53, 165)
+  ); 
+}
+
+
+
+h1{
+ text-align: center;
+}
+
+#button > button,a,button{
+   width: 100px;
+   border-radius: 5px;
+   height: 30px;
+   
+}
+#button >a>button{
+   height: 30px;
+   font-size: large;
+   position: absolute;
+   background-color: blue;
+   margin-left: 60px;
+}
+#button > button{
+  
+   font-size: large;
+   margin-left: 80px;
+   background-color: blue;
+}
+
+
+#test{
+   display: flex;
+   flex-direction: column;
+
+   width: 400px;
+   height: 200px;
+   margin: auto;
+   margin-top: 20px;
+   padding: 10px;
+   background-color: transparent;
+}
+
+#task{
+   border-radius: 5px;
+   height: 25px;
+   width: 250px;
+}
+#detail{
+   border-radius: 5px;
+   width: 250px;
+   height: 25px;
+}
+
+#test> div{
+   
+   margin: 20px;
+}
+ .detail{
+   margin-left: 36px;
+ }
+
+#test> div > label{
+   margin-right: 10px;
+   font-size: larger;
+
+}
+
