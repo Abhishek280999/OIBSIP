@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculater</title>
+  <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="./style2.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  <!-- <h1>Calculater</h1> -->
+  <div class=" flex flex-col items-center mx-auto m-w-20 ">
+
+    <h1>Calculater</h1>
+    
+    <div id="main_div">
+
+      <div class="rows">
+        <input class="input" id="temp" type="text"/>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" onclick="switchon()"></span>
+        </label>
+      </div>  
+
+      <div class="row">
+        <button class="button back_color">C</button>
+        <button class="button back_color">%</button>
+        <button class="button back_color">√</button>
+        <button class="button back_color"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+        <button class="button back_color">x<sup>2</sup></button>
+        
+      </div >
+
+      <div class="row">
+      <button class="button back_color2 ">(</button>
+      <button class="button back_color2">)</button>
+      <button class="button back_color2">log()</button>
+      <button class="button back_color2">tan()</button>
+      <button class="button back_color2">sin()</button>
+    </div >
+
+    <div class="row">
+      <button class="button back_color_blue">7</button>
+      <button class="button back_color_blue">8</button>
+      <button class="button back_color_blue">9</button>
+      <button class="button back_color2">*</button>
+      <button class="button back_color2">cos()</button>
+     
+    </div>
+
+    <div class="row">
+      <button class="button back_color_blue">4</button>
+      <button class="button back_color_blue">5</button>
+      <button class="button back_color_blue">6</button>
+      <button class="button back_color2">/</button>
+      <button class="button back_color2">π</button>
+    </div>
+
+    <div class="row">
+      <button class="button back_color_blue">1</button>
+      <button class="button back_color_blue">2</button>
+      <button class="button back_color_blue">3</button>
+      <button class="button back_color2">+</button>
+      <button class="button back_color2">+/-</button>
+      
+    </div>
+
+    <div class="row">
+      <button class="button back_color_blue">0</button>
+      <button class="button back_color_blue">.</button>
+      <button class="button back_color_blue">00</button>
+      <button class="button back_color2">-</button>
+      <button class="button">=</button>
+     
+
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

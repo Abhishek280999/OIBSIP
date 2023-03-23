@@ -1,0 +1,162 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(79, 51, 176, 1),
+    rgba(210, 53, 165)
+  );
+}
+
+.mx-auto{
+  margin: auto;
+}
+
+.flex{
+  display:flex;
+} 
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+ /* SWITCH CSS */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+
+input:checked + .slider {
+  background-color: #f32121;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+ /* Main CSS */
+
+#main_div {
+  border: 10px solid transparent;
+  box-shadow: 10px 0px 8px 5px #888888;
+
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 5%;
+}
+.back_color {
+  background-color: rgb(128, 128, 226);
+}
+.back_color2{
+  background-color: tan;
+}
+.back_color_blue {
+  background-color: aqua;
+}
+
+/* button CSS */
+.row {
+  margin: 8px 0px;
+}
+
+.button {
+  width: 66px;
+  padding: 10px;
+  margin: 5px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  color: black;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.1);
+
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* display CSS */
+
+.rows {
+  margin: -20px 0px;
+}
+.rows input {
+  background-color: black;
+  width: 280px;
+  text-align: right;
+  font-size: 20px;
+
+  font-weight: bold;
+  margin: 40px;
+  padding: 25px 15px;
+  border: 6px groove transparent;
+  box-shadow: 5px 10px 8px 10px #888888;
+  /* box-shadow: 5px 10px; */
+  /* border: 2px solid black; */
+  border-radius: 5px;
+}
